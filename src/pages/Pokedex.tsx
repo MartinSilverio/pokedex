@@ -17,7 +17,10 @@ export default function Pokedex() {
         return <span>There was an error getting pokemon: {error.message}</span>;
 
     return (
-        <div>
+        <div className="grid grid-rows-4 justify-center gap-2 border border-sky-500 bg-slate-600">
+            <h1 className="text-xl font-semibold text-yellow-500">
+                Pokedex Pokemon Selector
+            </h1>
             <PokemonSelector
                 selectedPokemon={selectedPokemon}
                 pokemonList={data.results}
